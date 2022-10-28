@@ -1,7 +1,7 @@
-import express, {application} from "express";
+import { Router } from "express";
 import { deleteData, getData, postData, updateData } from "./controller.js";
 
-const router = express.Router();
+const router = Router();
 
 
 router.get('/', getData);
