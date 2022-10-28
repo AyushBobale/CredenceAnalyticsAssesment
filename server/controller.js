@@ -24,7 +24,7 @@ const postData = asyncHandler( async(req, res, next) =>{
 });
 
 const updateData = asyncHandler( async(req, res, next) => {
-    const data = await DataModel.findById(req.body.id);
+    const data = await DataModel.findById(req.params.id);
     if(!data){
         res.status(400);
         throw new Error('Task not found');
@@ -33,7 +33,7 @@ const updateData = asyncHandler( async(req, res, next) => {
         res.status(400);
         throw new Error('Please add name');
     }
-    const dataUpdate = await DataModel.findByIdAndUpdate(req.body.id,
+    const dataUpdate = await DataModel.findByIdAndUpdate(req.params.id,
         {
             name    : req.body.name,
             img     : req.body.img,
@@ -44,13 +44,12 @@ const updateData = asyncHandler( async(req, res, next) => {
 });
 
 const deleteData = asyncHandler( async(req, res, next) => {
-    console.log(req.body)
-    const data = await DataModel.findById(req.body.id);
+    const data = await DataModel.findById(req.params.id);
     if(!data){
         res.status(400);
         throw new Error('Data not found');
     }
-    const dataDelete = await DataModel.findByIdAndDelete(req.body.id);
+    const dataDelete = await DataModel.findByIdAndDelete(req.params.id);
     res.status(200).json(dataDelete);
 })
 

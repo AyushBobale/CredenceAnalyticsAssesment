@@ -1,5 +1,51 @@
 # CRUD app /API using Node.js 
 
+## Note
+---
+
+A better folder structure could be used since the project was small I kept all the files in the root folder
+A better approach would be 
+
+```
+server
+│   index.js
+│
+└───routes
+│   │   route1.js
+│   │   route2.js
+│   
+└───models
+│   │   Model1.js
+│   │   Model2.js
+│
+└───middleware
+│   │   middleware1.js
+│   │   middleware2.js
+│
+└───controller
+│   │   controller1.js
+│   │   controller2.js
+│
+└───config
+│   config.js
+│
+```
+
+## How to run 
+---
+
+``` bash
+npm install
+cd server
+npm run develop # To start a development server
+```
+```bash
+npm install
+cd server
+npm start # To start a Production server
+```
+
+---
 ## Libraries used 
 * express
     * To create a server
@@ -11,7 +57,7 @@
     * storing sensitive env vars
 * cors
     * allowing for cross origin requests
-* nodemon
+* nodemon [dev dependency]
     * dev dependency
 
 ---
@@ -36,11 +82,11 @@
 ![Post Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/post_req.PNG?raw=true)
 * Get after Post Request 
 ![Get after_Post_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_post.PNG?raw=true)
-* Update Request 
+* Update Request [old image new update uses params]
 ![Update Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/update_req.PNG?raw=true)
 * Get after Update Request 
 ![Get after_update_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_update.PNG?raw=true)
-* Delete Request 
+* Delete Request [old image new update uses params]
 ![Delete Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/del_req.PNG?raw=true)
 * Get after Delete Request 
 ![Get after_Del_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_del.PNG?raw=true)

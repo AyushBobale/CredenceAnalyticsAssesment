@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(cors({origin  : "*"}));
 
+console.log(process.env.NODE_ENV);
 
 import connectDB from './db.js';
 import router from "./routes.js";
