@@ -30,4 +30,19 @@
 
 ---
 ## Outputs 
+* Get Request 
+![Get Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_req.PNG?raw=true)
+* Post Request 
+![Post Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/post_req.PNG?raw=true)
+* Get after Post Request 
+![Get after_Post_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_post.PNG?raw=true)
+* Update Request 
+![Update Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/update_req.PNG?raw=true)
+* Get after Update Request 
+![Get after_update_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_update.PNG?raw=true)
+* Delete Request 
+![Delete Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/del_req.PNG?raw=true)
+* Get after Delete Request 
+![Get after_Del_Req](https://raw.githubusercontent.com/AyushBobale/CredenceAnalyticsAssesment/main/imgs/get_after_del.PNG?raw=true)
+
 
